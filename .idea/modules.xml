@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MovieDB/MovieDB.iml" filepath="$PROJECT_DIR$/MovieDB/MovieDB.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/MovieDB-PROJECT.iml" filepath="$PROJECT_DIR$/.idea/MovieDB-PROJECT.iml" />
+    </modules>
+  </component>
+</project>
