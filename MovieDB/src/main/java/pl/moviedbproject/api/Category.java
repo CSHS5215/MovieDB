@@ -1,4 +1,4 @@
-package pl.moviedbproject.MovieDB.Movie;
+package pl.moviedbproject.api;
 
 
 public enum Category {

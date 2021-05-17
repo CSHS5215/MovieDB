@@ -1,4 +1,4 @@
-package pl.moviedbproject.MovieDB.config;
+package pl.moviedbproject.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.format.FormatterRegistry;

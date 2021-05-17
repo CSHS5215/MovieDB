@@ -1,21 +1,29 @@
-package pl.moviedbproject.MovieDB.Movie;
+package pl.moviedbproject.dao.entity;
 
-//import javax.persistence.GeneratedValue;
-//import javax.persistence.GenerationType;
-//import javax.persistence.Id;
+import pl.moviedbproject.api.Category;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 import java.time.LocalDate;
 
+@Entity
 public class Movie {
-    //    @Id
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private final long id;
 
-    private final String name;
-    private final String authorName;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private  long id;
+
+    private  String name;
+    private  String authorName;
     private int rating;
-    private final LocalDate date;
-    private final Category category;
+    private  LocalDate date;
+    private Category category;
+
+    public Movie() {
+    }
 
     public Movie(Long id, String name, String authorName, int rating, LocalDate date, Category category) {
         this.id = id;
@@ -26,6 +34,8 @@ public class Movie {
         this.date = date;
         this.category = category;
     }
+
+
 
     public long getId() {
         return id;

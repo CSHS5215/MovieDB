@@ -1,7 +1,7 @@
-package pl.moviedbproject.MovieDB.config;
+package pl.moviedbproject.config;
 
 import org.springframework.core.convert.converter.Converter;
-import pl.moviedbproject.MovieDB.Movie.Category;
+import pl.moviedbproject.api.Category;
 
 public class StringToEnumConverter implements Converter<String, Category> {
     @Override
