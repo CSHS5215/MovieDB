@@ -16,10 +16,10 @@ public class Movie {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private  long id;
 
-    private  String name;
-    private  String authorName;
+    private String name;
+    private String authorName;
     private int rating;
-    private  LocalDate date;
+    private LocalDate date;
     private Category category;
 
     public Movie() {
