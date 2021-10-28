@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Optional;
 
 
-@RequestMapping("/api/videos")
+@RequestMapping("/api/movies")
 @RestController
 public class MovieDBApi {
 
@@ -28,7 +28,7 @@ public class MovieDBApi {
         return listOfMovies;
     }
 
-    @GetMapping("/findby")
+    @GetMapping("/findByCategory")
     public Movie getByCategory(@RequestParam("category") Category category) {
         Optional<Movie> moviesByCategories = listOfMovies.stream()
                 .filter(movie -> movie.getCategory() == category).findAny();
@@ -36,7 +36,7 @@ public class MovieDBApi {
 
     }
 
-    @GetMapping
+    @GetMapping("/findById")
     public Movie getById(@RequestParam("id") Long id) {
         Optional<Movie> moviesById = listOfMovies.stream()
                 .filter(movie -> movie.getId() == id).findFirst();
